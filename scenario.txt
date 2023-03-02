@@ -1,7 +1,8 @@
 Scenario 1:
 1. go to landing page
-2. open random item from hot sellers (in the bottom)
-3. select random size and color
-4. add item to cart
-5. go to view and edit cart
-6. verify that item in cart has correct name, size and color are correct
+2. go to Women->Tops->Jackets
+3. open random item
+4. get title and select size and color
+5. add item to cart
+6. go to view and edit cart
+7. verify that item in cart has correct name, price, size and color are correct

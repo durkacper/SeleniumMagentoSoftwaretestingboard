@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e81706-9343-4f98-b85a-39bd05ca8c4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenario.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BasePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LandingPagePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddHotSellerToCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
+    <list default="true" id="50e81706-9343-4f98-b85a-39bd05ca8c4b" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ItemPagePO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddHotSellerToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddHotSellerToCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677761447941</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1677768066160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677768066160</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +104,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

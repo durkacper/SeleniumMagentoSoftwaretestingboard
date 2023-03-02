@@ -18,9 +18,14 @@ public class BasePO {
     @FindBy(xpath = "//li[@class='product-item']/div/a")
     List<WebElement> itemsList;
 
-    public void addRandomItemToCart() {
+    @FindBy
+    WebElement womenCategory;
+
+    public ItemPagePO openRandomItem() {
         Random random = new Random();
         int randomValue = random.nextInt(itemsList.size());
         itemsList.get(randomValue).click();
+        ItemPagePO itemPagePO = new ItemPagePO(driver);
+        return itemPagePO;
     }
 }
