@@ -1,9 +1,11 @@
 import org.testng.annotations.Test;
 
-public class AddHotSellerToCart extends TestBase {
+public class AddHotSellerToCartTest extends TestBase {
+
 
     @Test
-    public void addHotSellerToCart(){
-
+    public void addHotSellerToCartTest() {
+    landingPagePO.goToLandingPage();
+    landingPagePO.addRandomItemToCart();
     }
 }

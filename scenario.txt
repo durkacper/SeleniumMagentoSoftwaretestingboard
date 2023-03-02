@@ -1,0 +1,7 @@
+Scenario 1:
+1. go to landing page
+2. open random item from hot sellers (in the bottom)
+3. select random size and color
+4. add item to cart
+5. go to view and edit cart
+6. verify that item in cart has correct name, size and color are correct
