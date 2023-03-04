@@ -4,8 +4,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.Random;
 
 public class ItemPagePO extends BasePO {
+
 
     public ItemPagePO(WebDriver driver) {
         super(driver);
@@ -26,34 +28,62 @@ public class ItemPagePO extends BasePO {
     @FindBy(css = "div.swatch-option.swatch-option.color")
     List<WebElement> colorsList;
 
+    @FindBy(css = "button[title='Add to Cart']")
+    WebElement addToCartButton;
 
 
+    public void addToCartButtonClick(){
+        addToCartButton.click();
+    }
 
-    public void selectColor(String color){
+
+    public void selectRandomColor() {
+        Random random = new Random();
+        int randomValue = random.nextInt(colorsList.size());
+        colorsList.get(randomValue).click();
+    }
+
+
+    public void selectRandomSize() {
+        Random random = new Random();
+        int randomValue = random.nextInt(sizesList.size());
+        sizesList.get(randomValue).click();
+    }
+
+
+    public String getSelectedColor() {
+        String selectedColor = null;
+        waitUntilElementIsVisible(itemTitle);
         for (int i = 0; i < colorsList.size(); i++) {
-            String sizeText = colorsList.get(i).getText();
-            if(sizeText.equalsIgnoreCase(color)){
-                colorsList.get(i).click();
+            String attributeValue = colorsList.get(i).getAttribute("aria-checked");
+            if (attributeValue.equalsIgnoreCase("true")) {
+                selectedColor = colorsList.get(i).getAttribute("aria-label");
             }
         }
+        return selectedColor;
     }
 
 
-    public void selectSize(String size){
+    public String getSelectedSize() {
+        String selectedSize = null;
         for (int i = 0; i < sizesList.size(); i++) {
-            String sizeText = sizesList.get(i).getText();
-            if(sizeText.equalsIgnoreCase(size)){
-                sizesList.get(i).click();
+            String attributeValue = sizesList.get(i).getAttribute("aria-checked");
+            if (attributeValue.equalsIgnoreCase("true")) {
+                selectedSize = sizesList.get(i).getText();
             }
         }
+        return selectedSize;
     }
 
-    public void getItemPrice(){
-        itemPrice.getText();
+
+    public String getItemPrice() {
+        String itemPriceText = itemPrice.getText();
+        return itemPriceText;
     }
 
-    public void getItemTitle() {
-        itemTitle.getText();
+    public String getItemTitle() {
+        String itemTitleText = itemTitle.getText();
+        return itemTitleText;
     }
 
 
