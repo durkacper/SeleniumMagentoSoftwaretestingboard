@@ -2,7 +2,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
@@ -32,12 +35,13 @@ public class ItemPagePO extends BasePO {
     WebElement addToCartButton;
 
 
-    public void addToCartButtonClick(){
+    public void addToCartButtonClick() {
         addToCartButton.click();
     }
 
 
     public void selectRandomColor() {
+        waitForColorsToBeVisible();
         Random random = new Random();
         int randomValue = random.nextInt(colorsList.size());
         colorsList.get(randomValue).click();
@@ -53,7 +57,6 @@ public class ItemPagePO extends BasePO {
 
     public String getSelectedColor() {
         String selectedColor = null;
-        waitUntilElementIsVisible(itemTitle);
         for (int i = 0; i < colorsList.size(); i++) {
             String attributeValue = colorsList.get(i).getAttribute("aria-checked");
             if (attributeValue.equalsIgnoreCase("true")) {
@@ -86,5 +89,11 @@ public class ItemPagePO extends BasePO {
         return itemTitleText;
     }
 
-
+    public void waitForColorsToBeVisible() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfAllElements(colorsList));
+    }
 }
+
+
+

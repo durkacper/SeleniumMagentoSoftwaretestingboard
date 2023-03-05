@@ -31,8 +31,33 @@ public class BasePO {
     @FindBy(xpath = "//ul[@id='ui-id-2']/li[2]/ul/li[1]/ul/li[1]")
     WebElement womenJacketsCategory;
 
+    @FindBy(css = "header.page-header div div[data-block='minicart']")
+    WebElement cart;
 
-    public void goToCategory(){
+    @FindBy(css = "header.page-header div div[data-block='minicart'] a span.counter.qty")
+    WebElement cartCounter;
+
+    @FindBy(css = "div.actions a.viewcart")
+    WebElement viewAndEditCart;
+
+
+    public ShoppingCartPagePO goToViewAndEditCart() {
+        viewAndEditCart.click();
+        ShoppingCartPagePO shoppingCartPagePO = new ShoppingCartPagePO(driver);
+        return shoppingCartPagePO;
+    }
+
+    public void goToCart() {
+        waitForCartToBeLoaded();
+        cart.click();
+    }
+
+    public void waitForCartToBeLoaded() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.attributeToBe(cartCounter, "class", "counter qty"));
+    }
+
+    public void goToCategory() {
         waitUntilElementIsVisible(womenCategory);
         Actions actions = new Actions(driver);
         actions.moveToElement(womenCategory).moveToElement(womenTopsCategory).moveToElement(womenJacketsCategory).build().perform();
@@ -48,8 +73,9 @@ public class BasePO {
         return itemPagePO;
     }
 
-    public void waitUntilElementIsVisible(WebElement element){
+    public void waitUntilElementIsVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
 }
