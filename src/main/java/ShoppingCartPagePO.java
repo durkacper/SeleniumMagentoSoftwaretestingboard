@@ -23,9 +23,50 @@ public class ShoppingCartPagePO extends BasePO {
     @FindBy(xpath = "//table[@id='shopping-cart-table']/tbody/tr[1]/td[2]//span[@class='price']")
     WebElement itemPrice;
 
+    @FindBy(xpath = "//table[@id='shopping-cart-table']/tbody/tr[1]/td[4]//span[@class='price']")
+    WebElement subtotalPrice;
+
+    @FindBy(css = "input[title='Qty']")
+    WebElement qty;
+
+    @FindBy(css = "button[value='update_qty']")
+    WebElement updateShoppingCartButton;
+
+    @FindBy(css = "div.loading-mask")
+    WebElement loader;
+
+
+    public int getSubtotalPrice() {
+        waitUntilElementDisappear(loader);
+        String subPrice = subtotalPrice.getText();
+        String finalSubPrice = subPrice.substring(1, subPrice.length()-3);
+        int intSubPrice = Integer.parseInt(finalSubPrice);
+        return intSubPrice;
+    }
+
+
+    public int getItemPriceInt() {
+        String price = itemPrice.getText();
+        String finalItemPrice = price.substring(1, price.length()-3);
+        int priceInt = Integer.parseInt(finalItemPrice);
+        return priceInt;
+    }
+
+
+    public void updateShoppingCart() {
+        updateShoppingCartButton.click();
+    }
+
+
+    public void setQty(int qtyValue) {
+        qty.clear();
+        qty.sendKeys(String.valueOf(qtyValue));
+    }
+
 
     public String getItemPrice() {
-        return itemPrice.getText();
+        String price = itemPrice.getText();
+        return price;
     }
 
     public String getItemTitle() {

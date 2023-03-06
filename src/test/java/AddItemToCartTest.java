@@ -1,9 +1,10 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddSpecificItemToCartTest extends TestBase {
+public class AddItemToCartTest extends TestBase {
 
 
+    //Scenario 1
     @Test
     public void addSpecificItemToCartTest() {
         landingPagePO.goToLandingPage();
@@ -40,4 +41,29 @@ public class AddSpecificItemToCartTest extends TestBase {
         Assert.assertEquals(itemTitleInCart, itemTitle);
 
     }
+
+
+    //Scenario 2
+    @Test
+    public void updateQtyInShoppingCart() {
+        int qty = 2;
+        landingPagePO.goToLandingPage();
+        landingPagePO.goToCategory();
+        ItemPagePO itemPagePO = landingPagePO.openRandomItem();
+        itemPagePO.selectRandomColor();
+        itemPagePO.selectRandomSize();
+        String itemPrice = itemPagePO.getItemPrice();
+        itemPagePO.addToCartButtonClick();
+        itemPagePO.goToCart();
+        ShoppingCartPagePO shoppingCartPagePO = itemPagePO.goToViewAndEditCart();
+        shoppingCartPagePO.setQty(qty);
+        shoppingCartPagePO.updateShoppingCart();
+        int subtotalPrice = shoppingCartPagePO.getSubtotalPrice();
+        int itemPriceInCart = shoppingCartPagePO.getItemPriceInt();
+
+        Assert.assertEquals(itemPriceInCart * qty, subtotalPrice);
+
+    }
+
+
 }

@@ -2,7 +2,20 @@ Scenario 1:
 1. go to landing page
 2. go to Women->Tops->Jackets
 3. open random item
-4. get title and select size and color
+4. select random color and random size
+5. get title, price, selected size and color
+6. add item to cart
+7. go to view and edit cart
+8. verify that item in cart has correct title, price, size and color
+
+
+
+Scenario 2:
+1. go to landing page
+2. go to Women->Tops->Jackets
+3. open random item
+4. select random color and random size
 5. add item to cart
 6. go to view and edit cart
-7. verify that item in cart has correct name, price, size and color are correct
+7. update Qty
+8. verify that Subtotal = Price * Qty

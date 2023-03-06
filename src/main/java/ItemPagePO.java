@@ -80,8 +80,8 @@ public class ItemPagePO extends BasePO {
 
 
     public String getItemPrice() {
-        String itemPriceText = itemPrice.getText();
-        return itemPriceText;
+         String itemPriceText = itemPrice.getText();
+         return itemPriceText;
     }
 
     public String getItemTitle() {
