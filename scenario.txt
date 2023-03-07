@@ -19,3 +19,15 @@ Scenario 2:
 6. go to view and edit cart
 7. update Qty
 8. verify that Subtotal = Price * Qty
+
+
+
+Scenario 3:
+1. go to landing page
+2. go to Women->Tops->Jackets
+3. Size: S
+4. Style: Jacket
+5. Color: Blue
+6. Verify that search results are correct
+
+
