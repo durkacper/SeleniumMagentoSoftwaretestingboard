@@ -1,4 +1,3 @@
-import org.apache.commons.io.input.WindowsLineEndingInputStream;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -57,12 +57,15 @@ public class BasePO {
     List<WebElement> currentFilters;
 
 
-    public void getCurrentFilters(){
+    public List<String> getCurrentFilters(){
+        List<String> filters = new ArrayList<>();
         for (int i = 0; i < currentFilters.size(); i++) {
-            String currentFilterNames = currentFilters.get(i).getText();
-            //System.out.println(currentFilterNames);
+            filters.add(currentFilters.get(i).getText());
         }
+        //System.out.println(filters);
+        return filters;
     }
+
 
     public void selectStyleFilter(String style) {
         for (int i = 0; i < shoppingOptionsList.size(); i++) {

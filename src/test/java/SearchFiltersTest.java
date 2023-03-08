@@ -1,6 +1,8 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SearchFiltersTest extends TestBase {
 
     @Test
@@ -11,9 +13,11 @@ public class SearchFiltersTest extends TestBase {
         jacketsPagePO.selectStyleFilter("Jacket");
         jacketsPagePO.selectSizeFilter("M");
         jacketsPagePO.selectColorFilter("Blue");
-        jacketsPagePO.getCurrentFilters();
+        List<String> currentFilters = jacketsPagePO.getCurrentFilters();
 
-        //Assert.
+        Assert.assertTrue(currentFilters.contains("Jacket"));
+        Assert.assertTrue(currentFilters.contains("M"));
+        Assert.assertTrue(currentFilters.contains("Blue"));
     }
 
 }
