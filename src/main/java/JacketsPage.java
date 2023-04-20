@@ -1,9 +1,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class JacketsPagePO extends BasePO{
+public class JacketsPage extends BasePage {
 
-    public JacketsPagePO (WebDriver driver){
+    public JacketsPage(WebDriver driver){
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);

@@ -9,10 +9,10 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
-public class ItemPagePO extends BasePO {
+public class ItemPage extends BasePage {
 
 
-    public ItemPagePO(WebDriver driver) {
+    public ItemPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);

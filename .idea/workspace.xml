@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50e81706-9343-4f98-b85a-39bd05ca8c4b" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SearchFiltersTest.searchFiltersTest">
+  <component name="RunManager" selected="TestNG.AddItemToCartTest.addSpecificItemToCartTest">
     <configuration name="AddHotSellerToCartTest.addHotSellerToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumMagentoSoftwaretestingboard" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,9 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddItemToCartTest.addSpecificItemToCartTest" />
         <item itemvalue="TestNG.SearchFiltersTest.searchFiltersTest" />
         <item itemvalue="TestNG.AddItemToCartTest.updateQtyInShoppingCart" />
-        <item itemvalue="TestNG.AddItemToCartTest.addSpecificItemToCartTest" />
         <item itemvalue="TestNG.AddHotSellerToCartTest.addHotSellerToCartTest" />
         <item itemvalue="TestNG.AddHotSellerToCartTest.openLandingPage" />
       </list>
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678270780797</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <created>1681327733444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681327733444</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

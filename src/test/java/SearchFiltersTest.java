@@ -9,7 +9,7 @@ public class SearchFiltersTest extends TestBase {
     public void searchFiltersTest() {
         landingPagePO.goToLandingPage();
         landingPagePO.goToCategory();
-        JacketsPagePO jacketsPagePO = new JacketsPagePO(driver);
+        JacketsPage jacketsPagePO = new JacketsPage(driver);
         jacketsPagePO.selectStyleFilter("Jacket");
         jacketsPagePO.selectSizeFilter("M");
         jacketsPagePO.selectColorFilter("Blue");

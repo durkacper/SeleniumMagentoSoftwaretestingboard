@@ -9,7 +9,7 @@ public class AddItemToCartTest extends TestBase {
     public void addSpecificItemToCartTest() {
         landingPagePO.goToLandingPage();
         landingPagePO.goToCategory();
-        ItemPagePO itemPagePO = landingPagePO.openRandomItem();
+        ItemPage itemPagePO = landingPagePO.openRandomItem();
         itemPagePO.selectRandomColor();
         itemPagePO.selectRandomSize();
         String itemColor = itemPagePO.getSelectedColor();
@@ -18,7 +18,7 @@ public class AddItemToCartTest extends TestBase {
         String itemTitle = itemPagePO.getItemTitle();
         itemPagePO.addToCartButtonClick();
         itemPagePO.goToCart();
-        ShoppingCartPagePO shoppingCartPagePO = itemPagePO.goToViewAndEditCart();
+        ShoppingCartPage shoppingCartPagePO = itemPagePO.goToViewAndEditCart();
         String itemColorInCart = shoppingCartPagePO.getItemColor();
         String itemSizeInCart = shoppingCartPagePO.getItemSize();
         String itemPriceInCart = shoppingCartPagePO.getItemPrice();
@@ -49,13 +49,13 @@ public class AddItemToCartTest extends TestBase {
         int qty = 2;
         landingPagePO.goToLandingPage();
         landingPagePO.goToCategory();
-        ItemPagePO itemPagePO = landingPagePO.openRandomItem();
+        ItemPage itemPagePO = landingPagePO.openRandomItem();
         itemPagePO.selectRandomColor();
         itemPagePO.selectRandomSize();
         String itemPrice = itemPagePO.getItemPrice();
         itemPagePO.addToCartButtonClick();
         itemPagePO.goToCart();
-        ShoppingCartPagePO shoppingCartPagePO = itemPagePO.goToViewAndEditCart();
+        ShoppingCartPage shoppingCartPagePO = itemPagePO.goToViewAndEditCart();
         shoppingCartPagePO.setQty(qty);
         shoppingCartPagePO.updateShoppingCart();
         int subtotalPrice = shoppingCartPagePO.getSubtotalPrice();

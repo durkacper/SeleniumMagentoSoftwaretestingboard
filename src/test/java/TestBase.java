@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 public class TestBase {
 
     WebDriver driver;
-    LandingPagePO landingPagePO;
+    LandingPage landingPagePO;
 
     public WebDriver initializeWebDriver(){
         WebDriverManager.chromedriver().setup();
@@ -20,9 +20,9 @@ public class TestBase {
 
 
     @BeforeMethod
-    public LandingPagePO launchApp(){
+    public LandingPage launchApp(){
         driver = initializeWebDriver();
-        landingPagePO = new LandingPagePO(driver);
+        landingPagePO = new LandingPage(driver);
         landingPagePO.goToLandingPage();
         return landingPagePO;
     }

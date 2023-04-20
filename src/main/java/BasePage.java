@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class BasePO {
+public class BasePage {
 
     WebDriver driver;
 
-    public BasePO(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -112,9 +112,9 @@ public class BasePO {
         }
     }
 
-    public ShoppingCartPagePO goToViewAndEditCart() {
+    public ShoppingCartPage goToViewAndEditCart() {
         viewAndEditCart.click();
-        ShoppingCartPagePO shoppingCartPagePO = new ShoppingCartPagePO(driver);
+        ShoppingCartPage shoppingCartPagePO = new ShoppingCartPage(driver);
         return shoppingCartPagePO;
     }
 
@@ -136,11 +136,11 @@ public class BasePO {
     }
 
 
-    public ItemPagePO openRandomItem() {
+    public ItemPage openRandomItem() {
         Random random = new Random();
         int randomValue = random.nextInt(itemsList.size());
         itemsList.get(randomValue).click();
-        ItemPagePO itemPagePO = new ItemPagePO(driver);
+        ItemPage itemPagePO = new ItemPage(driver);
         return itemPagePO;
     }
 
