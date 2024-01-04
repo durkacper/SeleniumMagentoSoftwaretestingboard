@@ -1,0 +1,9 @@
+[
+  {
+    "url": "https://magento.softwaretestingboard.com/",
+    "invalidEmail": "invalidemail@test.com",
+    "invalidPassword": "invalidpassword",
+    "firstName": "Tom",
+    "lastName": "Ford"
+  }
+]

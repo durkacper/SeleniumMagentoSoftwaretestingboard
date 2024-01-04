@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Tests">
+    <listeners>
+        <listener class-name="testComponents.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG">
+        <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="loginWithCorrectCredentials"/>
+                    <include name="loginWithInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

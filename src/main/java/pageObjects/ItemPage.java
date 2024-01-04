@@ -1,9 +1,12 @@
+package pageObjects;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageComponents.BasePage;
 
 import java.time.Duration;
 import java.util.List;
@@ -11,49 +14,64 @@ import java.util.Random;
 
 public class ItemPage extends BasePage {
 
-
     public ItemPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    Random random = new Random();
 
     @FindBy(css = "h1.page-title")
-    WebElement itemTitle;
+    private WebElement itemTitle;
 
     @FindBy(css = "div.product-info-main div.product-info-price span.price")
-    WebElement itemPrice;
+    private WebElement itemPrice;
 
     @FindBy(css = "div.swatch-option.swatch-option.text")
-    List<WebElement> sizesList;
+    private List<WebElement> sizesList;
 
     @FindBy(css = "div.swatch-option.swatch-option.color")
-    List<WebElement> colorsList;
+    private List<WebElement> colorsList;
 
     @FindBy(css = "button[title='Add to Cart']")
-    WebElement addToCartButton;
+    private WebElement addToCartButton;
 
+    @FindBy(css = "div.actions a.viewcart")
+    private WebElement viewAndEditCart;
 
-    public void addToCartButtonClick() {
+    @FindBy(css = "header.page-header div div[data-block='minicart']")
+    private WebElement cart;
+
+    public ItemPage addToCartButtonClick() {
         addToCartButton.click();
+        return this;
     }
 
+    public ShoppingCartPage goToViewAndEditCart() {
+        viewAndEditCart.click();
+        ShoppingCartPage shoppingCartPagePO = new ShoppingCartPage(driver);
+        return shoppingCartPagePO;
+    }
 
-    public void selectRandomColor() {
-        waitForColorsToBeVisible();
-        Random random = new Random();
+    public ItemPage goToCart() {
+        waitForCartToBeLoaded();
+        cart.click();
+        return this;
+    }
+
+    public ItemPage selectRandomColor() {
+        waitUntilListOfElementsIsVisible(colorsList);
         int randomValue = random.nextInt(colorsList.size());
         colorsList.get(randomValue).click();
+        return this;
     }
 
-
-    public void selectRandomSize() {
-        Random random = new Random();
+    public ItemPage selectRandomSize() {
         int randomValue = random.nextInt(sizesList.size());
         sizesList.get(randomValue).click();
+        return this;
     }
-
 
     public String getSelectedColor() {
         String selectedColor = null;
@@ -66,7 +84,6 @@ public class ItemPage extends BasePage {
         return selectedColor;
     }
 
-
     public String getSelectedSize() {
         String selectedSize = null;
         for (int i = 0; i < sizesList.size(); i++) {
@@ -78,7 +95,6 @@ public class ItemPage extends BasePage {
         return selectedSize;
     }
 
-
     public String getItemPrice() {
          String itemPriceText = itemPrice.getText();
          return itemPriceText;
@@ -87,11 +103,6 @@ public class ItemPage extends BasePage {
     public String getItemTitle() {
         String itemTitleText = itemTitle.getText();
         return itemTitleText;
-    }
-
-    public void waitForColorsToBeVisible() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfAllElements(colorsList));
     }
 }
 

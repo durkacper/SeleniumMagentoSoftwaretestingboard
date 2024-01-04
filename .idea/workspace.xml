@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50e81706-9343-4f98-b85a-39bd05ca8c4b" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AdvancedSearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/ExtentReporterNG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/ExcelDataReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/JsonDataReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/loginData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testComponents/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UpdateShoppingCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuits/addItemsToCartTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuits/loginTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuits/searchTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuits/updateShoppingCartTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenario.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageComponents/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JacketsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddItemToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddItemToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchFiltersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testComponents/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +55,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboard&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.AddItemToCartTest.addSpecificItemToCartTest">
-    <configuration name="AddHotSellerToCartTest.addHotSellerToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumMagentoSoftwaretestingboard" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddHotSellerToCartTest" />
-      <option name="METHOD_NAME" value="addHotSellerToCartTest" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\durk\Desktop\SeleniumMagentoSoftwaretestingboardTestNG\testSuits" />
+      <recent name="C:\Users\durk\Desktop\SeleniumMagentoSoftwaretestingboardTestNG" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\durk\Desktop\SeleniumMagentoSoftwaretestingboardTestNG\testSuits" />
+      <recent name="C:\Users\durk\Desktop\SeleniumMagentoSoftwaretestingboard\src\main\PageObjects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits/allTests.xml">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits/allTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuits/allTests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits/updateShoppingCartTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuits/updateShoppingCartTests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginWithCorrectCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginWithCorrectCredentials" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -53,11 +126,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddHotSellerToCartTest.openLandingPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumMagentoSoftwaretestingboard" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddHotSellerToCartTest" />
-      <option name="METHOD_NAME" value="openLandingPage" />
+    <configuration name="LoginTest.loginWithInvalidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginWithInvalidCredentials" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -65,35 +144,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddItemToCartTest.addSpecificItemToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumMagentoSoftwaretestingboard" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddItemToCartTest" />
-      <option name="METHOD_NAME" value="addSpecificItemToCartTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddItemToCartTest.updateQtyInShoppingCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumMagentoSoftwaretestingboard" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddItemToCartTest" />
-      <option name="METHOD_NAME" value="updateQtyInShoppingCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchFiltersTest.searchFiltersTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumMagentoSoftwaretestingboard" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchFiltersTest" />
-      <option name="METHOD_NAME" value="searchFiltersTest" />
+    <configuration name="SearchTests.advancedSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumMagentoSoftwaretestingboardTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTests" />
+      <option name="METHOD_NAME" value="advancedSearchTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddItemToCartTest.addSpecificItemToCartTest" />
-        <item itemvalue="TestNG.SearchFiltersTest.searchFiltersTest" />
-        <item itemvalue="TestNG.AddItemToCartTest.updateQtyInShoppingCart" />
-        <item itemvalue="TestNG.AddHotSellerToCartTest.addHotSellerToCartTest" />
-        <item itemvalue="TestNG.AddHotSellerToCartTest.openLandingPage" />
+        <item itemvalue="TestNG.C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits/allTests.xml" />
+        <item itemvalue="TestNG.C:/Users/durk/Desktop/SeleniumMagentoSoftwaretestingboardTestNG/testSuits/updateShoppingCartTests.xml" />
+        <item itemvalue="TestNG.LoginTest.loginWithInvalidCredentials" />
+        <item itemvalue="TestNG.LoginTest.loginWithCorrectCredentials" />
+        <item itemvalue="TestNG.SearchTests.advancedSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681327733444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <created>1682019880440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682019880440</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
