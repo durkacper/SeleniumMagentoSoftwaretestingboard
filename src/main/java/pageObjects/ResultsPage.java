@@ -14,7 +14,6 @@ public class ResultsPage extends BasePage {
 
     public ResultsPage(WebDriver driver) {
         super(driver);
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
