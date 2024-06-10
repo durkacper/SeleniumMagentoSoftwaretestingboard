@@ -10,7 +10,6 @@ public class ShoppingCartPage extends BasePage {
 
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
