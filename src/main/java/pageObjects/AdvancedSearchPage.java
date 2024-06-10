@@ -10,7 +10,6 @@ public class AdvancedSearchPage extends BasePage {
 
     public AdvancedSearchPage(WebDriver driver){
         super(driver);
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
